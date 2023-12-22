@@ -10,6 +10,9 @@ function viewPost(req, res) {
 
   if (req.method === "GET") {
     GET(req, res);
+  } else if (req.method === "POST") {
+    // Redirect to the same URL with a GET request
+    redirect(res, req.url);
   } else {
     // Handle other HTTP methods or return an error.
     res.statusCode = 405;

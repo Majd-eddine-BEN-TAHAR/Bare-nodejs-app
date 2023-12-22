@@ -1,8 +1,8 @@
 // Import necessary modules and dependencies
-const baseLayout = require("./../views/layouts/baseLayout");
-const { hashPassword } = require("./../utils/hashing");
+const baseLayout = require("../views/layouts/baseLayout");
+const { hashPassword } = require("../utils/hashing");
 const serverError = require("../utils/serverError");
-const db = require("./../db/database");
+const db = require("../db/database");
 
 function register(req, res) {
   // Check if the user is already logged in, if so, redirect to the home page

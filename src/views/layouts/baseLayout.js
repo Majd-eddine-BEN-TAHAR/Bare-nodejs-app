@@ -1,6 +1,6 @@
-const header = require("./../components/header");
-const main = require("./../components/main");
-const footer = require("./../components/footer");
+const header = require("../components/header");
+const main = require("../components/main");
+const footer = require("../components/footer");
 
 function baseLayout(content, isLoggedIn) {
   return `

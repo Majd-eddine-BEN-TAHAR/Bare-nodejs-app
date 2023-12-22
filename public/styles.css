@@ -309,3 +309,19 @@ h2,
 h3 {
     text-decoration: underline;
 }
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.search-form>input {
+    flex: 3;
+}
+
+.search-form>button {
+    flex: 1;
+}

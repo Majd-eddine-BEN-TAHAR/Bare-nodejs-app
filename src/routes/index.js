@@ -8,6 +8,7 @@ const editPost = require("./editPost");
 const comments = require("./comments");
 const viewPost = require("./viewPost");
 const profile = require("./profile");
+const search = require("./search");
 
 module.exports = {
   home,
@@ -20,4 +21,5 @@ module.exports = {
   comments,
   viewPost,
   profile,
+  search,
 };

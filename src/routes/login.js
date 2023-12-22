@@ -1,8 +1,8 @@
 const { comparePassword } = require("../utils/hashing");
 const serverError = require("../utils/serverError");
 const baseLayout = require("../views/layouts/baseLayout");
-const { generateSessionId } = require("./../utils/session");
-const db = require("./../db/database");
+const { generateSessionId } = require("../utils/session");
+const db = require("../db/database");
 
 function login(req, res) {
   // Check if the user is already logged in, if so, redirect to the home page

@@ -1,4 +1,4 @@
-const db = require("./../db/database");
+const db = require("../db/database");
 
 function validateSession(req, res, next) {
   const sessionId = req.cookies.sessionId;

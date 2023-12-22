@@ -1,6 +1,6 @@
-const db = require("../db/database");
-const baseLayout = require("../views/layouts/baseLayout");
-const serverError = require("./../utils/serverError.js");
+const db = require("../db/database.js");
+const baseLayout = require("../views/layouts/baseLayout.js");
+const serverError = require("../utils/serverError.js");
 
 function posts(req, res) {
   if (!req.isLoggedIn) {
@@ -50,10 +50,14 @@ function GET(req, res) {
                     <div class="post-title">
                       <p>${post.title}</p>
                       <div>
-                        <a href="/posts/edit/${post.id}" class="edit-button" style="text-decoration: none;">
+                        <a href="/posts/edit/${
+                          post.id
+                        }" class="edit-button" style="text-decoration: none;">
                           Edit post
                         </a>
-                        <a href="/posts/${post.id}" class="edit-button" style="text-decoration: none;">
+                        <a href="/posts/${
+                          post.id
+                        }" class="edit-button" style="text-decoration: none;">
                           View post
                         </a>
                       </div>

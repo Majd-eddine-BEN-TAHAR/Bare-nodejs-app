@@ -1,7 +1,7 @@
 const http = require("http");
 const path = require("path");
 const { URL } = require("url");
-const routeHandlers = require("./routes");
+const routeHandlers = require("./routes/index.js");
 const { parseCookies } = require("./utils/cookies.js");
 const { validateSession } = require("./utils/middleware.js");
 const handleDynamicRoutes = require("./utils/handleDynamicRoutes.js");
@@ -26,6 +26,7 @@ const staticRoutes = {
   "/posts": routeHandlers.posts,
   "/comments": routeHandlers.comments,
   "/profile": routeHandlers.profile,
+  "/search": routeHandlers.search,
 };
 
 // Define dynamic routes
