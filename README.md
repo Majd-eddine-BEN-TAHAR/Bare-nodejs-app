@@ -32,6 +32,7 @@ This project demonstrates a Node.js application built without the use of framewo
 - File upload
 - CRUD Operations on Posts
 - Commenting on Posts
+- Search for posts
 
 ## License
 
