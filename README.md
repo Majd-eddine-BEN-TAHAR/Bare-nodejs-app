@@ -9,7 +9,6 @@ This project demonstrates a Node.js application built without the use of framewo
 - Node.js
 - SQLite3 for database management
 - HTML/CSS for the frontend
-- JavaScript for server-side logic
 
 ## Prerequisites
 
